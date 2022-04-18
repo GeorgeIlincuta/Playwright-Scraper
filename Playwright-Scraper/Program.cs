@@ -1,4 +1,5 @@
-﻿using Microsoft.Playwright;
+﻿using HtmlAgilityPack;
+using Microsoft.Playwright;
 using System;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ class Program
         await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
             Headless = false,
+            SlowMo = 100,
         });
         var context = await browser.NewContextAsync();
 
@@ -22,10 +24,24 @@ class Program
         // Click button:has-text("Accept")
         await page.Locator("button:has-text(\"Accept\")").ClickAsync();
 
-        // Click text=Apartament finalizat 2 camere cu gradina Metrou 1 Decembrie 1918
-        await page.RunAndWaitForNavigationAsync(async () =>
+        var websiteName = "https://www.storia.ro";
+        var web = new HtmlWeb();
+        var doc = web.Load(page.Url);
+        HtmlNodeCollection parentId = doc.DocumentNode.SelectNodes("//*[@class='css-p74l73 es62z2j17']/a");
+
+        // Closing popup
+        var list = page.Locator("//span[contains(@class, 'spinner__loading')]|//div[@id='confirmation']").WaitForAsync();
+
+        foreach (var item in parentId)
         {
-            await page.Locator("text=Apartament finalizat 2 camere cu gradina Metrou 1 Decembrie 1918").ClickAsync();
-        });
+            var link = websiteName + item.GetAttributeValue("href", String.Empty);
+            await page.GotoAsync(link);
+
+            var innerLink = web.Load(link);
+            var listing = innerLink.DocumentNode.SelectSingleNode(".//*[@class='css-wj4wb2 emxfhao1']").InnerText.Trim();
+            Console.WriteLine(listing);
+            await page.GoBackAsync();
+        }
+        web.Load(page.Url);
     }
 }

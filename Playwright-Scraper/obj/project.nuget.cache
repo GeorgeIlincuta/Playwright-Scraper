@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N8yb17UOybsz4HVJb+QsE1DnQVOI9C4t++YuBCII0HarjCoajpij7OlKLuMG1w6y9LNG8MtttM4em81KjenKsA==",
+  "dgSpecHash": "4GcLFT2qhTIROFpeu9wZ1dTUCmfB8ISAHEdh7z1Iv4hpbsDUo3uBcArJqDZop5EEZnHWSDRUVQwDS3mG7Am9Uw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Documents\\C# Code\\Playwright-Scraper\\Playwright-Scraper\\Playwright-Scraper.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\htmlagilitypack\\1.11.42\\htmlagilitypack.1.11.42.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.playwright\\1.21.0\\microsoft.playwright.1.21.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",

@@ -771,3 +771,4 @@ C:\Users\Asus\Documents\C# Code\Playwright-Scraper\Playwright-Scraper\bin\Debug\
 C:\Users\Asus\Documents\C# Code\Playwright-Scraper\Playwright-Scraper\bin\Debug\net6.0\Microsoft.Playwright.dll
 C:\Users\Asus\Documents\C# Code\Playwright-Scraper\Playwright-Scraper\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\Asus\Documents\C# Code\Playwright-Scraper\Playwright-Scraper\obj\Debug\net6.0\Playwright-Scraper.csproj.CopyComplete
+C:\Users\Asus\Documents\C# Code\Playwright-Scraper\Playwright-Scraper\bin\Debug\net6.0\HtmlAgilityPack.dll
