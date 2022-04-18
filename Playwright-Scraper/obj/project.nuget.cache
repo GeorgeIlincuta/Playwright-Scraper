@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "N8yb17UOybsz4HVJb+QsE1DnQVOI9C4t++YuBCII0HarjCoajpij7OlKLuMG1w6y9LNG8MtttM4em81KjenKsA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\Documents\\C# Code\\Playwright-Scraper\\Playwright-Scraper\\Playwright-Scraper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.playwright\\1.21.0\\microsoft.playwright.1.21.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
